@@ -1,4 +1,4 @@
-# F-Droid guide for adding a new app
+# Guide for adding an app to F-Droid
 Simple instructions for adding an app to F-Droid. For more instructions visit [the official Gitlab repo](https://gitlab.com/fdroid/fdroiddata/blob/master/CONTRIBUTING.md). Goal of the steps below is to create a merge request on their offical repo so they can add your app.
 
 ## Steps
