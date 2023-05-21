@@ -85,6 +85,13 @@ CurrentVersionCode: 24                                                          
 11. Choose a smart commit message and commit your changes.
 12. Go to the `CI/CD` menu in the GitLab project of your fork.
 13. Check if the pipeline for your commit(s) succeed. If not, take a look into the logs and try to fix the error by editing the metadata file again.
-  * If there are errors look at the pipeline and try to fix them
-15. If everything went fine, you can create a new [merge request](https://gitlab.com/fdroid/fdroiddata/-/merge_requests) at the `fdroiddata` repository.
-16. Now wait for the packagers to pick up your Merge Request. Please keep track if they asked any questions and reply to them as soon as possible.
+  * If there are errors look at the pipeline and try to fix them. When reproducible builds are wanted and the pipeline fails, make sure to add the following code in your `build.gradle`
+  ```
+  compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+  ``` 
+  
+14. If everything went fine, you can create a new [merge request](https://gitlab.com/fdroid/fdroiddata/-/merge_requests) at the `fdroiddata` repository.
+15. Now wait for the packagers to pick up your Merge Request. Please keep track if they asked any questions and reply to them as soon as possible.
