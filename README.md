@@ -4,7 +4,7 @@ Simple instructions for adding an app to F-Droid. For more instructions visit [t
 ## Steps
 ### 1. Prepare your app (example app is hosted in Github)
 * Add fastlane structure with descriptions, icon, title, screenshots etc for the F-Droid store:
-  * In the root directory of your app create the following folder structure in `fastlane/metadata/android/`([source](https://f-droid.org/en/docs/All_About_Descriptions_Graphics_and_Screenshots/)). For an example see [here](https://github.com/amnesica/KryptEY/tree/master/fastlane/metadata/android/en-US). Not all entries are mandatory (in my case having `short_description.txt`, `full_description.txt`, `title.txt`, changelog file, `icon.png` and screenshots in the resp. directories was enough)
+  * In the root directory of your app create the following folder structure in `fastlane/metadata/android/`([source](https://f-droid.org/en/docs/All_About_Descriptions_Graphics_and_Screenshots/)). For an example see [here](https://github.com/amnesica/KryptEY/tree/master/fastlane/metadata/android/en-US). Not all entries are mandatory (in my case having `short_description.txt`, `full_description.txt`, `title.txt`, changelog file, `icon.png`, `featureGraphic.png` and screenshots in the resp. directories was enough)
   ```
   ├── en-US                       (en-US is the F-Droid fallback language)
   │   ├── short_description.txt   (short description, max 80 chars, mandatory)
